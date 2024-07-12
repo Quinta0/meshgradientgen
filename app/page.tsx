@@ -173,7 +173,7 @@ export default function Component() {
     return colors[Math.floor(Math.random() * colors.length)];
   };
 
-  const drawTriangle = (ctx, p1, p2, p3) => {
+  const drawTriangle = (ctx: CanvasRenderingContext2D, p1: {x: number, y: number, color: string}, p2: {x: number, y: number, color: string}, p3: {x: number, y: number, color: string}) => {
     const gradient = ctx.createLinearGradient(p1.x, p1.y, p3.x, p3.y);
     gradient.addColorStop(0, p1.color);
     gradient.addColorStop(0.5, p2.color);
@@ -189,7 +189,7 @@ export default function Component() {
     ctx.fill();
   };
 
-  const drawSquare = (ctx, p1, p2, p3, p4) => {
+  const drawSquare = (ctx: CanvasRenderingContext2D, p1: {x: number, y: number, color: string}, p2: {x: number, y: number, color: string}, p3: {x: number, y: number, color: string}, p4: {x: number, y: number, color: string}) => {
     const gradient = ctx.createLinearGradient(p1.x, p1.y, p3.x, p3.y);
     gradient.addColorStop(0, p1.color);
     gradient.addColorStop(0.33, p2.color);
@@ -207,7 +207,7 @@ export default function Component() {
     ctx.fill();
   };
 
-  const drawHexagon = (ctx, centerX, centerY, radius, color) => {
+  const drawHexagon = (ctx: CanvasRenderingContext2D, centerX: number, centerY: number, radius: number, color: string) => {
     ctx.beginPath();
     for (let i = 0; i < 6; i++) {
       const angle = (Math.PI / 3) * i;

@@ -13,7 +13,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 
-
 export default function Component() {
   const [vertices, setVertices] = useState(6);
   const [colors, setColors] = useState(["#4338ca", "#6366f1", "#ec4899", "#8b5cf6"]);
@@ -426,7 +425,7 @@ interface RGB {
   b: number;
 }
 
-function DownloadIcon(props) {
+function DownloadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
       <svg
           {...props}
@@ -447,7 +446,7 @@ function DownloadIcon(props) {
   )
 }
 
-function XIcon(props) {
+function DownloadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
       <svg
           {...props}

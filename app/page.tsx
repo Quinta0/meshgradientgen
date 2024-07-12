@@ -106,7 +106,7 @@ export default function Component() {
     };
   };
 
-  const drawTriangularMesh = (ctx, width, height) => {
+  const drawTriangularMesh = (ctx: CanvasRenderingContext2D, width: number, height: number)  => {
     const gridSize = Math.max(width, height) / (vertices - 1);
     const points = createPoints(width, height, gridSize);
 
@@ -123,7 +123,7 @@ export default function Component() {
     }
   };
 
-  const drawSquareMesh = (ctx, width, height) => {
+  const drawSquareMesh = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
     const gridSize = Math.max(width, height) / (vertices - 1);
     const points = createPoints(width, height, gridSize);
 
@@ -139,7 +139,7 @@ export default function Component() {
     }
   };
 
-  const drawHexagonalMesh = (ctx, width, height) => {
+  const drawHexagonalMesh = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
     const hexRadius = width / (vertices * 2);
     const verticalSpacing = hexRadius * Math.sqrt(3);
 

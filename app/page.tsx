@@ -155,7 +155,7 @@ export default function Component() {
     }
   };
 
-  const createPoints = (width, height, gridSize) => {
+  const createPoints = (width: number, height: number, gridSize: number) => {
     const points = [];
     for (let y = 0; y < vertices; y++) {
       for (let x = 0; x < vertices; x++) {

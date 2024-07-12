@@ -21,7 +21,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             className={cn(
                 'antialiased',
                 fontHeading.variable,
-                fontBody.variable
+                fontBody.variable,
+
             )}
         >
         {children}

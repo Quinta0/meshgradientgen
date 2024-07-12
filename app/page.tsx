@@ -446,7 +446,7 @@ function DownloadIcon(props: React.SVGProps<SVGSVGElement>) {
   )
 }
 
-function DownloadIcon(props: React.SVGProps<SVGSVGElement>) {
+function XIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
       <svg
           {...props}
@@ -460,8 +460,8 @@ function DownloadIcon(props: React.SVGProps<SVGSVGElement>) {
           strokeLinecap="round"
           strokeLinejoin="round"
       >
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
       </svg>
   )
 }
